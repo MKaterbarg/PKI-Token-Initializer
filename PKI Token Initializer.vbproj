@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PKI_Token_Initializer</RootNamespace>
+    <TargetFramework>net6.0</TargetFramework>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <StartupObject>Sub Main</StartupObject>
+    <Version>0.0.1</Version>
+    <Authors>Martijn Katerbarg</Authors>
+    <Company>Stockholm IT Productions</Company>
+    <PackageId>PKITokenInitializer</PackageId>
+    <Product>PKI Token Initializer</Product>
+    <Description>A command line (CLI) tool to initialize PKI Hardware tokens. Currently tested and working with Safenet / Gemalto eToken 5110 CC tokens</Description>
+    <PackageProjectUrl>https://github.com/MKaterbarg/PKI-Token-Initializer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MKaterbarg/PKI-Token-Initializer</RepositoryUrl>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyName>PKIInit</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pkcs11Interop" Version="5.1.2" />
+  </ItemGroup>
+
+</Project>
