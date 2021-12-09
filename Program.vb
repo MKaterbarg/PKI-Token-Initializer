@@ -22,6 +22,12 @@ Module Program
 
             End If
 
+            If arg = "-Force" Then
+
+                Force = True
+
+            End If
+
             If arg.StartsWith("Admin:") Then
 
                 AdminPassword = arg.Substring(6)

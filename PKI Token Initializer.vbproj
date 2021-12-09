@@ -16,6 +16,7 @@
     <RepositoryUrl>https://github.com/MKaterbarg/PKI-Token-Initializer</RepositoryUrl>
     <SignAssembly>false</SignAssembly>
     <AssemblyName>PKIInit</AssemblyName>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
