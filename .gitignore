@@ -24,7 +24,6 @@ x86/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/*
-!bin/publish
 [Oo]bj/
 [Ll]og/
 
