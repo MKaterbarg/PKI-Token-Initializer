@@ -170,8 +170,19 @@ Module Program
         Using session As ISession = slot.OpenSession(SessionType.ReadWrite)
 
             session.Login(CKU.CKU_SO, CurrentAdminPassword)
-            session.SetPin(CurrentAdminPassword, AdminPassword)
-            session.InitPin(UserPassword)
+            Try
+                session.SetPin(CurrentAdminPassword, AdminPassword)
+            Catch ex As Pkcs11Exception
+                Console.WriteLine("Could not set Administrator Password. Please make sure the new password confirms to the password requirements.")
+            End Try
+
+            Try
+                session.InitPin(UserPassword)
+            Catch ex As Pkcs11Exception
+                Console.WriteLine("Could not set Administrator Password. Please make sure the new password confirms to the password requirements.")
+            End Try
+
+
             session.Logout()
 
 

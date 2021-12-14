@@ -2,7 +2,7 @@
 
 The PKI Hardware Token Initalizer is a command line tool to automate the initialization of PKI tokens.
 
-It has been tested against the Safenet / Gemalto eToken 5110 CC. 
+It has been designed for the Safenet / Gemalto eToken 5110 CC PKI token. However under "Confirmed Hardware" there's a list available of all tested and confirmed tokens.  
 Feel free to reach out if you want this tested and updated for different token types.
 
 ## Requirements
@@ -38,3 +38,11 @@ For those wondering how it actually works, a short description of what the appli
 5. Confirmation is asked before the token is initalized (Unless the --Force parameter is supplied)
 6. The token is initialized
 7. The admin and user passwords set
+
+## Confirmed Hardware
+
+| Token      | Status | Comment |
+| ----------- | ----------- |
+| Aladdin eToken PRO | Working | Works out of the box if the Safenet Authentication Client is installed. If not, the "eTPKCS11.dll" from Safenet should be added to the PKIInit directory
+| Safenet eToken 5110 CC | Working | Works out of the box if the Safenet Authentication Client is installed. If not, the "eTPKCS11.dll" from Safenet should be added to the PKIInit directory
+| Safenet eToken 511x FIPS | Working | Works out of the box if the Safenet Authentication Client is installed. If not, the "eTPKCS11.dll" from Safenet should be added to the PKIInit directory
